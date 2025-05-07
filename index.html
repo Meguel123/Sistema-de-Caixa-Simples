@@ -7,8 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="php.php" method="post">
-        <label for="nome_cliente">qual seu nome</label>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    padding: 30px;
+}
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+    color: #5a5a5a;
+}
+.info {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #2c7;
+    font-weight: bold;}
+    .legenda{
+            align-items: center;
+            margin-left: 30px;
+        }
+        #container {
+            max-width: 20%;
+            margin-left: 40%;
+            border: 5px solid;
+            background-color: rgb(218, 218, 218);
+            border-color: rgb(190, 190, 190);
+            align-items:center ;
+            margin-top: 60px;
+            border-radius: 10px;
+            margin-top: 10%;
+            padding: 1%;
+            border-color: #5a5a5a;
+        }
+        .campos{
+            margin-left: 10%;
+            max-width: 300px;
+            align-items: center;
+        }
+</style>
+<form action="caixa.php" method="post">
+<div id="container">
+        <div class="campos">
+        <label for="nome_cliente">qual seu nome</label><br>
         <input type="text" id="nome_cliente" name="nome_cliente"> <br><br>
 
         <label for="nome_produto">qual seu 1 produto</label>
@@ -23,11 +75,13 @@
         <label for="Vproduto2">valor do 2 produto </label>
          <input type="number" id="Vproduto2" name="Vproduto2"><br><br>
 
-         <label for="V">valor pago </label>
+         <label for="V">valor pago </label><br>
          <input type="number" id="V" name="V"><br><br>
 
 
         <button type="submit">gerar nota fiscal</button>
     </form>
+</div>
+</div>
 </body>
 </html>
